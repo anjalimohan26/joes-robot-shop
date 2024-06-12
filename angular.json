@@ -8,7 +8,7 @@
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "bot",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -22,7 +22,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets"              
             ],
             "styles": [
               "src/styles.css"
@@ -63,7 +63,8 @@
               "browserTarget": "joes-robot-shop:build:production"
             },
             "development": {
-              "browserTarget": "joes-robot-shop:build:development"
+              "browserTarget": "joes-robot-shop:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
